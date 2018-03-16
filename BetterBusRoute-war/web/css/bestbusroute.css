@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2015, 5:01:25 PM
+    Author     : angel_banuelos
+*/
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: "Times New Roman";
+
+}
+h1{
+    color: orangered;
+    text-align: center;
+}
+p{
+    font-family: "Times New Roman";
+    size: 14px;
+}
+#title{
+    border-radius: 0px 160px;
+    border: 2px solid gray;
+    height: 60px;
+}
+#topMenu{
+    
+}
+#logo{
+    
+}
+#container{
+    border: 2px;
+    overflow: auto;
+    
+}
+#left{
+    border-radius: 15px;
+    border: 2px solid grey;
+    margin-right: 2px;
+    margin-top: 5px;
+    width: 20%;
+    height: 80%;
+    float: left;
+}
+#content{
+    border-radius: 15px 50px 30px;
+    background: gray;
+    color: white;
+    width: 50%;
+    height: 500px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+}
+#right{
+    border-radius: 15px;
+    border: 2px solid grey;
+    margin-right: 2px;
+    margin-top: 5px;
+    width: 20%;
+    height: 500px;
+    float: right;
+}
+#logoImg{
+    opacity: 1;
+    filter: alpha(opacity=40);
+    width: 30px;
+    height: 30px;
+}
+.row{
+    margin: 5px;
+    clear: right;
+}
+.input{
+    width: 80%;
+    margin-left: 10px;
+}
+.toLeft{
+    text-align: left;
+}
+.toRigth{
+    text-align: right;
+    margin-right: 2px;
+}

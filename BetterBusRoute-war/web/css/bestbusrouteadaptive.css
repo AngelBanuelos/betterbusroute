@@ -1,0 +1,144 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 23, 2015, 4:36:54 PM
+    Author     : Angel.Sahagun
+*/
+
+body {
+    /*https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Usando_las_cajas_flexibles_CSS*/
+    font-family: "Times New Roman";
+    size: 14px;
+}
+h1{
+    color: orangered;
+    text-align: center;
+}
+p{
+    font-family: "Times New Roman";
+    size: 14px;
+}
+
+#main {
+    min-height: 800px;
+    margin: 0px;
+    padding: 0px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+}
+
+#main > article {
+    margin: 4px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 7pt;
+
+    color: black;
+    -webkit-flex: 3 1 60%;
+    flex: 3 1 60%;
+    -webkit-order: 2;
+    order: 2;
+}
+
+#main > nav {
+    margin: 4px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 7pt;
+    /*background: #ccccff;*/
+    -webkit-flex: 1 6 20%;
+    flex: 1 6 20%;
+    -webkit-order: 1;
+    order: 1;
+}
+
+#main > aside {
+    margin: 4px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 7pt;
+    background: white;
+    -webkit-flex: 1 6 20%;
+    flex: 1 6 20%;
+    -webkit-order: 3;
+    order: 3;
+}
+
+header {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    border: 2px solid gray;
+    border-radius: 7pt;
+    background: white;
+}
+
+footer {
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    min-height: 100px;
+    /*border: 1px solid #eebb55;*/
+    border-radius: 7pt;
+    /*background: #ffeebb;*/
+}
+
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+
+    #main, #page {
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+
+    #main > nav, #main > aside, #main > article {
+        /* Return them to document order */
+        -webkit-order: 0;
+        order: 0;
+    }
+
+    #main > nav {
+        min-height: 50px;
+    } 
+    #main > aside {
+        min-height: 50px;
+        max-height: 50px;
+    } 
+    header, footer {
+        min-height: 50px;
+        max-height: 50px;
+    }
+}
+
+#logoImg{
+    opacity: 1;
+    filter: alpha(opacity=40);
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.row{
+    margin: 5px;
+    clear: right;
+}
+
+.input{
+    width: 80%;
+    margin-left: 10px;
+}
+a.btnMenu {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 4px;
+}

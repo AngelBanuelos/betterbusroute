@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Best Bus Route </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bestbusroute.css"/>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+        <script async="" src="js/map.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="title"> 
+                <div id="topMenu" > </div>
+                <div id="logo">
+                    <h1 class="toRigth"> 
+                        <img src="images/bus.png" id="logoImg"/>
+                        <span tabindex="0"> Mejor Ruta GDL </span> 
+                    </h1> 
+                </div>
+            </div>
+            <div id="left">  
+                <form>
+                    <div class="row"> 
+                        <p tabindex="0"> Origen </p> 
+                        <input type="text" class="input" placeholder="origen" id="origen"/> 
+                        <input type="button" value="+"/>
+                    </div>
+                    <div class="row"> 
+                        <p tabindex="0"> Destino </p> 
+                        <input type="text" class="input" placeholder="destino" id="destino" />
+                        <input type="button" value="+"/>
+                    </div>
+                    <div class="row"> 
+                        <p tabindex="0"> Presupuesto </p>
+                        <input type="text" class="input" placeholder="presupuesto" id="presupuesto" /> 
+                    </div>
+                    <div class="row"> 
+                        <p tabindex="0"> Radio </p>
+                        <select id="radio" class="input"> 
+                            <option>100</option>  
+                            <option>200</option>  
+                        </select>
+                    </div>
+                    <div class="row">
+                        <p tabindex="0"> Buscar </p> 
+                        <input type="button" class="input" onclick="searchRoute()" value="Buscar"/>
+                    </div>
+                </form>
+            </div>
+            <div id="right"> <p><span tabindex="0"> </span> </p>  </div>
+            <div id="content"> 
+                <script 
+                    async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDa6pOSMzTvSD5wyxF7pu62u45EAi16hp4&signed_in=true&callback=initMap">
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
